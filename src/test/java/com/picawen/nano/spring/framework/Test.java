@@ -1,10 +1,8 @@
 package com.picawen.nano.spring.framework;
 
-import org.junit.Test;
+public class Test {
 
-public class testBeanFactory {
-
-    @Test
+    @org.junit.Test
     public void testBeanFactory() {
         BeanFactory beanFactory = new BeanFactory();
         // 先注册
