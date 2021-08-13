@@ -2,16 +2,11 @@ package com.picawen.nano.spring.framework;
 
 public class UserService {
 
-    private String name;
+    private String uid;
 
-    public UserService(String name) {
-        this.name = name;
-    }
-
-    public UserService() {
-    }
+    private UserDao userDao;
 
     public void getUserInfo() {
-        System.out.println("获取用户信息-" + name);
+        System.out.println("获取用户信息:" + userDao.getUserName(uid));
     }
 }
