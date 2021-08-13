@@ -6,5 +6,8 @@ import com.picawen.nano.spring.framework.beans.BeansException;
  * Bean工厂接口定义
  */
 public interface BeanFactory {
+
     Object getBean(String name) throws BeansException;
+
+    Object getBean(String name, Object... args) throws BeansException;
 }

@@ -14,10 +14,7 @@ public class Test {
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition(beanName, beanDefinition);
 
-        UserService userService1 = (UserService) beanFactory.getBean(beanName);
+        UserService userService1 = (UserService) beanFactory.getBean(beanName,"666");
         userService1.getUserInfo();
-
-        UserService userService2 = (UserService) beanFactory.getBean(beanName);
-        userService2.getUserInfo();
     }
 }
